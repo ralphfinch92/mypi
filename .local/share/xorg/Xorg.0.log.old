@@ -1,0 +1,313 @@
+[    40.751] 
+X.Org X Server 1.21.1.16
+X Protocol Version 11, Revision 0
+[    40.752] Current Operating System: Linux MyScreen 6.12.62+rpt-rpi-v7 #1 SMP Raspbian 1:6.12.62-1+rpt1 (2025-12-18) armv7l
+[    40.752] Kernel command line: coherent_pool=1M 8250.nr_uarts=1 snd_bcm2835.enable_headphones=0 cgroup_disable=memory snd_bcm2835.enable_hdmi=1 snd_bcm2835.enable_hdmi=0  smsc95xx.macaddr=B8:27:EB:94:42:27 vc_mem.mem_base=0x1ec00000 vc_mem.mem_size=0x20000000  console=ttyS0,115200 console=tty1 root=PARTUUID=5c02d951-02 rootfstype=ext4 fsck.repair=yes rootwait cfg80211.ieee80211_regdom=GB
+[    40.753] xorg-server 2:21.1.16-1.3+rpt1+deb13u1 (https://www.debian.org/support) 
+[    40.753] Current version of pixman: 0.46.4
+[    40.753] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    40.753] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    40.754] (==) Log file: "/home/mypi/.local/share/xorg/Xorg.0.log", Time: Sun Mar 15 09:59:29 2026
+[    40.758] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    40.763] (==) No Layout section.  Using the first Screen section.
+[    40.763] (==) No screen section available. Using defaults.
+[    40.763] (**) |-->Screen "Default Screen Section" (0)
+[    40.763] (**) |   |-->Monitor "<default monitor>"
+[    40.769] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    40.769] (**) Option "Debug" "dmabuf_capable"
+[    40.769] (**) Allowing byte-swapped clients
+[    40.769] (==) Automatically adding devices
+[    40.769] (==) Automatically enabling devices
+[    40.769] (==) Automatically adding GPU devices
+[    40.769] (==) Automatically binding GPU devices
+[    40.769] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    40.779] (WW) The directory "/usr/share/fonts/X11/misc" does not exist.
+[    40.779] 	Entry deleted from font path.
+[    40.779] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[    40.779] 	Entry deleted from font path.
+[    40.779] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[    40.779] 	Entry deleted from font path.
+[    40.779] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[    40.779] 	Entry deleted from font path.
+[    40.779] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[    40.780] 	Entry deleted from font path.
+[    40.780] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[    40.780] 	Entry deleted from font path.
+[    40.780] (==) FontPath set to:
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[    40.780] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    40.780] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    40.780] (II) Loader magic: 0x231068
+[    40.780] (II) Module ABI versions:
+[    40.780] 	X.Org ANSI C Emulation: 0.4
+[    40.780] 	X.Org Video Driver: 25.2
+[    40.780] 	X.Org XInput driver : 24.4
+[    40.780] 	X.Org Server Extension : 10.0
+[    40.782] (++) using VT number 1
+
+[    40.789] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_32
+[    40.793] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    40.793] (II) Platform probe for /sys/devices/platform/soc/soc:gpu/drm/card0
+[    40.795] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 11 paused 0
+[    40.796] (II) no primary bus or device found
+[    40.796] 	falling back to /sys/devices/platform/soc/soc:gpu/drm/card0
+[    40.797] (II) LoadModule: "glx"
+[    40.800] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    40.865] (II) Module glx: vendor="X.Org Foundation"
+[    40.865] 	compiled for 1.21.1.16, module version = 1.0.0
+[    40.865] 	ABI class: X.Org Server Extension, version 10.0
+[    40.865] (==) Matched modesetting as autoconfigured driver 0
+[    40.865] (==) Matched fbdev as autoconfigured driver 1
+[    40.865] (==) Assigned the driver to the xf86ConfigLayout
+[    40.865] (II) LoadModule: "modesetting"
+[    40.866] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    40.878] (II) Module modesetting: vendor="X.Org Foundation"
+[    40.878] 	compiled for 1.21.1.16, module version = 1.21.1
+[    40.878] 	Module class: X.Org Video Driver
+[    40.878] 	ABI class: X.Org Video Driver, version 25.2
+[    40.878] (II) LoadModule: "fbdev"
+[    40.878] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[    40.880] (II) Module fbdev: vendor="X.Org Foundation"
+[    40.880] 	compiled for 1.21.1.3, module version = 0.5.0
+[    40.880] 	Module class: X.Org Video Driver
+[    40.881] 	ABI class: X.Org Video Driver, version 25.2
+[    40.881] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    40.881] (II) FBDEV: driver for framebuffer: fbdev
+[    40.881] (II) modeset(0): using drv /dev/dri/card0
+[    40.881] (WW) Falling back to old probe method for fbdev
+[    40.881] (II) Loading sub module "fbdevhw"
+[    40.881] (II) LoadModule: "fbdevhw"
+[    40.881] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[    40.885] (II) Module fbdevhw: vendor="X.Org Foundation"
+[    40.885] 	compiled for 1.21.1.16, module version = 0.0.2
+[    40.886] 	ABI class: X.Org Video Driver, version 25.2
+[    40.886] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[    40.887] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    40.887] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[    40.887] (==) modeset(0): RGB weight 888
+[    40.887] (==) modeset(0): Default visual is TrueColor
+[    40.887] (II) Loading sub module "glamoregl"
+[    40.887] (II) LoadModule: "glamoregl"
+[    40.888] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[    40.943] (II) Module glamoregl: vendor="X.Org Foundation"
+[    40.943] 	compiled for 1.21.1.16, module version = 1.0.1
+[    40.943] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    43.894] (II) modeset(0): glamor X acceleration enabled on VC4 V3D 2.1
+[    43.894] (II) modeset(0): glamor initialized
+[    43.894] (==) modeset(0): VariableRefresh: disabled
+[    43.894] (==) modeset(0): AsyncFlipSecondaries: disabled
+[    43.944] (II) modeset(0): Output HDMI-1 has no monitor section
+[    44.008] (II) modeset(0): EDID for output HDMI-1
+[    44.008] (II) modeset(0): Manufacturer: WSD  Model: 0  Serial#: 0
+[    44.008] (II) modeset(0): Year: 2016  Week: 13
+[    44.008] (II) modeset(0): EDID Version: 1.3
+[    44.008] (II) modeset(0): Digital Display Input
+[    44.008] (II) modeset(0): DFP 1.x compatible TMDS
+[    44.008] (II) modeset(0): Max Image Size [cm]: horiz.: 6  vert.: 26
+[    44.008] (II) modeset(0): Gamma: 2.50
+[    44.008] (II) modeset(0): No DPMS capabilities specified
+[    44.008] (II) modeset(0): Supported color encodings: RGB 4:4:4 
+[    44.008] (II) modeset(0): Default color space is primary color space
+[    44.008] (II) modeset(0): First detailed timing is preferred mode
+[    44.008] (II) modeset(0): redX: 0.640 redY: 0.330   greenX: 0.300 greenY: 0.600
+[    44.008] (II) modeset(0): blueX: 0.150 blueY: 0.060   whiteX: 0.312 whiteY: 0.329
+[    44.008] (II) modeset(0): Manufacturer's mask: 0
+[    44.008] (II) modeset(0): Supported detailed timing:
+[    44.008] (II) modeset(0): clock: 59.4 MHz   Image Size:  56 x 265 mm
+[    44.008] (II) modeset(0): h_active: 320  h_sync: 420  h_sync_end 452 h_blank_end 682 h_border: 0
+[    44.008] (II) modeset(0): v_active: 1480  v_sync: 1490  v_sync_end 1500 v_blanking: 1510 v_border: 0
+[    44.008] (II) modeset(0): Supported detailed timing:
+[    44.008] (II) modeset(0): clock: 59.4 MHz   Image Size:  56 x 265 mm
+[    44.008] (II) modeset(0): h_active: 320  h_sync: 420  h_sync_end 452 h_blank_end 682 h_border: 0
+[    44.008] (II) modeset(0): v_active: 1480  v_sync: 1490  v_sync_end 1500 v_blanking: 1510 v_border: 0
+[    44.008] (II) modeset(0): Monitor name: WaveShare-119
+[    44.008] (II) modeset(0): Unknown vendor-specific block 0
+[    44.008] (II) modeset(0): Supported detailed timing:
+[    44.008] (II) modeset(0): clock: 148.5 MHz   Image Size:  518 x 324 mm
+[    44.008] (II) modeset(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[    44.009] (II) modeset(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[    44.009] (II) modeset(0): Supported detailed timing:
+[    44.009] (II) modeset(0): clock: 74.2 MHz   Image Size:  518 x 324 mm
+[    44.009] (II) modeset(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[    44.009] (II) modeset(0): v_active: 540  v_sync: 542  v_sync_end 547 v_blanking: 562 v_border: 0
+[    44.009] (II) modeset(0): Supported detailed timing:
+[    44.009] (II) modeset(0): clock: 74.2 MHz   Image Size:  518 x 324 mm
+[    44.009] (II) modeset(0): h_active: 1280  h_sync: 1390  h_sync_end 1430 h_blank_end 1650 h_border: 0
+[    44.009] (II) modeset(0): v_active: 720  v_sync: 725  v_sync_end 730 v_blanking: 750 v_border: 0
+[    44.009] (II) modeset(0): Supported detailed timing:
+[    44.009] (II) modeset(0): clock: 27.0 MHz   Image Size:  518 x 324 mm
+[    44.009] (II) modeset(0): h_active: 720  h_sync: 736  h_sync_end 798 h_blank_end 858 h_border: 0
+[    44.009] (II) modeset(0): v_active: 480  v_sync: 489  v_sync_end 495 v_blanking: 525 v_border: 0
+[    44.009] (II) modeset(0): Number of EDID sections to follow: 1
+[    44.009] (II) modeset(0): EDID (in hex):
+[    44.009] (II) modeset(0): 	00ffffffffffff005e64000000000000
+[    44.009] (II) modeset(0): 	0d1a0103a3061a9606ee91a3544c9926
+[    44.009] (II) modeset(0): 	0f505400000001010101010101010101
+[    44.009] (II) modeset(0): 	0101010101013417406a11c81e506420
+[    44.009] (II) modeset(0): 	aa0038090100001e3417406a11c81e50
+[    44.009] (II) modeset(0): 	6420aa0038090100001e000000fc0057
+[    44.009] (II) modeset(0): 	61766553686172652d31313900000000
+[    44.009] (II) modeset(0): 	0018780c9a22000a2020202020200175
+[    44.009] (II) modeset(0): 	020327c15000050403020716011f1213
+[    44.009] (II) modeset(0): 	14201511062309070765030c00100083
+[    44.009] (II) modeset(0): 	010000e3050301023a801871382d4058
+[    44.009] (II) modeset(0): 	2c450006442100001e011d8018711c16
+[    44.009] (II) modeset(0): 	20582c250006442100009e011d007251
+[    44.009] (II) modeset(0): 	d01e206e28550006442100001e8c0ad0
+[    44.009] (II) modeset(0): 	8a20e02d10103e960006442100001800
+[    44.009] (II) modeset(0): 	00000000000000000000000000000067
+[    44.009] (WW) modeset(0): Output HDMI-1: Strange aspect ratio (56/265), consider adding a quirk
+[    44.009] (WW) modeset(0): Output HDMI-1: Strange aspect ratio (56/265), consider adding a quirk
+[    44.009] (II) modeset(0): Printing probed modes for output HDMI-1
+[    44.010] (II) modeset(0): Modeline "320x1480"x57.7   59.40  320 420 452 682  1480 1490 1500 1510 +hsync +vsync (87.1 kHz eP)
+[    44.010] (II) modeset(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[    44.010] (II) modeset(0): Modeline "1920x1080"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[    44.010] (II) modeset(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[    44.010] (II) modeset(0): Modeline "1920x1080i"x30.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+[    44.010] (II) modeset(0): Modeline "1920x1080i"x25.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+[    44.010] (II) modeset(0): Modeline "1920x1080"x24.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+[    44.010] (II) modeset(0): Modeline "1920x1080i"x30.0   74.18  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.7 kHz e)
+[    44.010] (II) modeset(0): Modeline "1920x1080"x24.0   74.18  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+[    44.010] (II) modeset(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    44.010] (II) modeset(0): Modeline "1280x720"x50.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[    44.010] (II) modeset(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    44.010] (II) modeset(0): Modeline "720x576"x50.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[    44.010] (II) modeset(0): Modeline "720x576i"x25.0   13.50  720 732 795 864  576 580 586 625 interlace -hsync -vsync (15.6 kHz e)
+[    44.010] (II) modeset(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[    44.010] (II) modeset(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[    44.010] (II) modeset(0): Modeline "720x480i"x30.0   13.51  720 739 801 858  480 488 494 525 interlace -hsync -vsync (15.8 kHz e)
+[    44.010] (II) modeset(0): Modeline "720x480i"x30.0   13.50  720 739 801 858  480 488 494 525 interlace -hsync -vsync (15.7 kHz e)
+[    44.010] (II) modeset(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    44.010] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    44.010] (II) modeset(0): Output HDMI-1 connected
+[    44.010] (II) modeset(0): Using exact sizes for initial modes
+[    44.010] (II) modeset(0): Output HDMI-1 using initial mode 320x1480 +0+0
+[    44.010] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[    44.010] (==) modeset(0): DPI set to (96, 96)
+[    44.010] (II) Loading sub module "fb"
+[    44.010] (II) LoadModule: "fb"
+[    44.010] (II) Module "fb" already built-in
+[    44.010] (II) UnloadModule: "fbdev"
+[    44.010] (II) Unloading fbdev
+[    44.011] (II) UnloadSubModule: "fbdevhw"
+[    44.011] (II) Unloading fbdevhw
+[    44.451] (==) modeset(0): Backing store enabled
+[    44.451] (==) modeset(0): Silken mouse enabled
+[    44.588] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[    44.589] (==) modeset(0): DPMS enabled
+[    44.589] (II) modeset(0): [DRI2] Setup complete
+[    44.589] (II) modeset(0): [DRI2]   DRI driver: vc4
+[    44.589] (II) modeset(0): [DRI2]   VDPAU driver: vc4
+[    44.589] (II) Initializing extension Generic Event Extension
+[    44.590] (II) Initializing extension SHAPE
+[    44.591] (II) Initializing extension MIT-SHM
+[    44.592] (II) Initializing extension XInputExtension
+[    44.597] (II) Initializing extension XTEST
+[    44.598] (II) Initializing extension BIG-REQUESTS
+[    44.599] (II) Initializing extension SYNC
+[    44.600] (II) Initializing extension XKEYBOARD
+[    44.601] (II) Initializing extension XC-MISC
+[    44.602] (II) Initializing extension SECURITY
+[    44.603] (II) Initializing extension XFIXES
+[    44.604] (II) Initializing extension RENDER
+[    44.605] (II) Initializing extension RANDR
+[    44.607] (II) Initializing extension COMPOSITE
+[    44.608] (II) Initializing extension DAMAGE
+[    44.609] (II) Initializing extension MIT-SCREEN-SAVER
+[    44.610] (II) Initializing extension DOUBLE-BUFFER
+[    44.611] (II) Initializing extension RECORD
+[    44.612] (II) Initializing extension DPMS
+[    44.613] (II) Initializing extension Present
+[    44.614] (II) Initializing extension DRI3
+[    44.615] (II) Initializing extension X-Resource
+[    44.616] (II) Initializing extension XVideo
+[    44.617] (II) Initializing extension XVideo-MotionCompensation
+[    44.617] (II) Initializing extension SELinux
+[    44.617] (II) SELinux: Disabled on system
+[    44.617] (II) Initializing extension GLX
+[    44.679] (II) AIGLX: Loaded and initialized vc4
+[    44.679] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    44.679] (II) Initializing extension XFree86-VidModeExtension
+[    44.680] (II) Initializing extension XFree86-DGA
+[    44.681] (II) Initializing extension XFree86-DRI
+[    44.682] (II) Initializing extension DRI2
+[    44.692] (II) modeset(0): Damage tracking initialized
+[    44.692] (II) modeset(0): Setting screen physical size to 84 x 391
+[    44.972] (II) config/udev: Adding input device vc4-hdmi (/dev/input/event0)
+[    44.972] (**) vc4-hdmi: Applying InputClass "libinput keyboard catchall"
+[    44.972] (II) LoadModule: "libinput"
+[    44.972] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    44.997] (II) Module libinput: vendor="X.Org Foundation"
+[    44.997] 	compiled for 1.21.1.16, module version = 1.5.0
+[    44.997] 	Module class: X.Org XInput Driver
+[    44.997] 	ABI class: X.Org XInput driver, version 24.4
+[    44.997] (II) Using input driver 'libinput' for 'vc4-hdmi'
+[    45.003] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 23 paused 0
+[    45.003] (**) vc4-hdmi: always reports core events
+[    45.003] (**) Option "Device" "/dev/input/event0"
+[    45.063] (II) event0  - vc4-hdmi: is tagged by udev as: Keyboard Pointingstick
+[    45.065] (II) event0  - vc4-hdmi: device is a pointer
+[    45.065] (II) event0  - vc4-hdmi: device is a keyboard
+[    45.066] (II) event0  - vc4-hdmi: device removed
+[    45.066] (II) libinput: vc4-hdmi: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    45.066] (II) libinput: vc4-hdmi: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    45.066] (II) libinput: vc4-hdmi: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    45.066] (II) libinput: vc4-hdmi: needs a virtual subdevice
+[    45.066] (**) Option "config_info" "udev:/sys/devices/platform/soc/3f902000.hdmi/rc/rc0/input0/event0"
+[    45.066] (II) XINPUT: Adding extended input device "vc4-hdmi" (type: MOUSE, id 6)
+[    45.068] (**) Option "AccelerationScheme" "none"
+[    45.068] (**) vc4-hdmi: (accel) selected scheme none/0
+[    45.068] (**) vc4-hdmi: (accel) acceleration factor: 2.000
+[    45.068] (**) vc4-hdmi: (accel) acceleration threshold: 4
+[    45.072] (II) event0  - vc4-hdmi: is tagged by udev as: Keyboard Pointingstick
+[    45.074] (II) event0  - vc4-hdmi: device is a pointer
+[    45.074] (II) event0  - vc4-hdmi: device is a keyboard
+[    45.076] (II) config/udev: Adding input device vc4-hdmi HDMI Jack (/dev/input/event1)
+[    45.077] (II) No input driver specified, ignoring this device.
+[    45.077] (II) This device may have been added with another device file.
+[    45.100] (**) vc4-hdmi: Applying InputClass "libinput keyboard catchall"
+[    45.101] (II) Using input driver 'libinput' for 'vc4-hdmi'
+[    45.101] (II) systemd-logind: returning pre-existing fd for /dev/input/event0 13:64
+[    45.101] (**) vc4-hdmi: always reports core events
+[    45.101] (**) Option "Device" "/dev/input/event0"
+[    45.101] (II) libinput: vc4-hdmi: is a virtual subdevice
+[    45.101] (II) libinput: vc4-hdmi: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    45.101] (II) libinput: vc4-hdmi: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    45.101] (II) libinput: vc4-hdmi: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    45.101] (**) Option "config_info" "udev:/sys/devices/platform/soc/3f902000.hdmi/rc/rc0/input0/event0"
+[    45.101] (II) XINPUT: Adding extended input device "vc4-hdmi" (type: KEYBOARD, id 7)
+[    45.101] (**) Option "xkb_model" "pc105"
+[    45.101] (**) Option "xkb_layout" "gb"
+[    45.203] (II) modeset(0): Disabling kernel dirty updates, not required.
+[    63.087] (II) modeset(0): EDID vendor "WSD", prod id 0
+[    63.087] (II) modeset(0): Printing DDC gathered Modelines:
+[    63.087] (II) modeset(0): Modeline "320x1480"x0.0   59.40  320 420 452 682  1480 1490 1500 1510 +hsync +vsync (87.1 kHz eP)
+[    63.087] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[    63.087] (II) modeset(0): Modeline "1920x1080i"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+[    63.087] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    63.087] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[    63.087] (II) modeset(0): Modeline "1440x480i"x0.0   27.00  1440 1478 1602 1716  480 488 494 525 interlace -hsync -vsync (15.7 kHz e)
+[    63.087] (II) modeset(0): Modeline "1440x576i"x0.0   27.00  1440 1464 1590 1728  576 580 586 625 interlace -hsync -vsync (15.6 kHz e)
+[    63.087] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    63.087] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[    63.087] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[    63.087] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[    63.087] (II) modeset(0): Modeline "1920x1080i"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+[    63.087] (II) modeset(0): Modeline "1920x1080"x0.0   74.25  1920 2558 2602 2750  1080 1084 1089 1125 +hsync +vsync (27.0 kHz e)
+[    63.088] (WW) modeset(0): Output HDMI-1: Strange aspect ratio (56/265), consider adding a quirk
+[    63.088] (WW) modeset(0): Output HDMI-1: Strange aspect ratio (56/265), consider adding a quirk
+[   244.507] (**) Option "fd" "23"
+[   244.508] (**) Option "fd" "23"
+[   244.508] (II) event0  - vc4-hdmi: device removed
+[   244.514] (II) UnloadModule: "libinput"
+[   244.514] (II) systemd-logind: not releasing fd for 13:64, still in use
+[   244.515] (II) UnloadModule: "libinput"
+[   244.515] (II) systemd-logind: releasing fd for 13:64
+[   245.137] (II) Server terminated successfully (0). Closing log file.

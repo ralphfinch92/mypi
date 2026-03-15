@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MyScreen Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #1a1a2e;
+      color: #e8e8e8;
+      width: 320px;
+      height: 1480px;
+      overflow: hidden;
+    }
+    .root {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      background: #16213e;
+      padding: 16px 12px 8px;
+      border-bottom: 3px solid #00d9ff;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      color: #00ff88;
+      text-align: center;
+    }
+    .subtitle {
+      margin-top: 4px;
+      font-size: 11px;
+      color: #888;
+      text-align: center;
+    }
+    .main {
+      flex: 1;
+      padding: 16px 16px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .card {
+      background: #2a2a4e;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 217, 255, 0.4);
+      padding: 14px 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+    }
+    .clock-time {
+      font-size: 40px;
+      font-weight: 600;
+      color: #00ff88;
+      text-align: center;
+    }
+    .clock-date {
+      margin-top: 6px;
+      font-size: 13px;
+      text-align: center;
+    }
+    .bar-label {
+      font-size: 11px;
+      color: #888;
+      margin-bottom: 4px;
+    }
+    .bar-track {
+      width: 100%;
+      height: 16px;
+      border-radius: 999px;
+      background: #1c1c36;
+      overflow: hidden;
+      border: 1px solid #444;
+    }
+    .bar-fill {
+      height: 100%;
+      width: 0%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #00ff88, #00d9ff);
+      transition: width 0.5s ease-out;
+    }
+    .info-row {
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+    .info-label {
+      color: #888;
+      margin-right: 4px;
+    }
+    .footer {
+      font-size: 11px;
+      text-align: center;
+      color: #666;
+      padding: 4px 0 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="root">
+    <header class="header">
+      <div class="title">MYSCREEN</div>
+      <div class="subtitle">Raspberry Pi dashboard</div>
+    </header>
+
+    <main class="main">
+      <!-- Clock card -->
+      <section class="card">
+        <div class="clock-time" id="time">--:--:--</div>
+        <div class="clock-date" id="date">Loading…</div>
+      </section>
+
+      <!-- Day progress -->
+      <section class="card">
+        <div class="bar-label" id="day-label">Day 0%</div>
+        <div class="bar-track">
+          <div class="bar-fill" id="day-bar"></div>
+        </div>
+      </section>
+
+      <!-- Info card -->
+      <section class="card">
+        <div class="info-row">
+          <span class="info-label">Host:</span>
+          <span id="hostname">MyScreen</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">IP:</span>
+          <span id="ip">192.168.0.78</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Up:</span>
+          <span id="uptime">0 minutes</span>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer">
+      Ready for Binance charts
+    </div>
+  </div>
+
+  <script>
+    function pad(n) { return String(n).padStart(2, "0"); }
+
+    function updateClock() {
+      const now = new Date();
+      const h = pad(now.getHours());
+      const m = pad(now.getMinutes());
+      const s = pad(now.getSeconds());
+      document.getElementById("time").textContent = `${h}:${m}:${s}`;
+      document.getElementById("date").textContent =
+        now.toLocaleDateString(undefined, { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+
+      const seconds = now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds();
+      const pct = seconds / 86400;
+      const pctLabel = Math.round(pct * 100);
+      document.getElementById("day-label").textContent = `Day ${pctLabel}%`;
+      document.getElementById("day-bar").style.width = `${pctLabel}%`;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+</html>
+

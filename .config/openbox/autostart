@@ -1,0 +1,9 @@
+xset s off
+xset -dpms
+xset s noblank
+
+sleep 2
+
+echo "autostart ran at $(date)" > /home/mypi/openbox.log
+
+netsurf-gtk file:///home/mypi/dashboard/index.html >> /home/mypi/netsurf.log 2>&1
